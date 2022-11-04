@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<heaD>
+
+    <body>
+        <h4>Are you sure ?</h4>
+        <h4> the id is
+            <a href="{% url 'update' student.id %}">{{student.id}}</a>
+        </h4>
+        <form action=" " method="post">
+            {% csrf_token %}
+            <input type="submit" value="delete">
+            <a href="{% url 'create' %} ">Cancel</a>
+        </form>
+    </body>
+</heaD>
+
+</html>

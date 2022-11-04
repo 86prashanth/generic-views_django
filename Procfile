@@ -1,0 +1,1 @@
+web:gunicorn.formview.wsgi:application,createview,deleteview,updateview

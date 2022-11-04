@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<title>Createview</title>
+
+<body>
+    <form action="" method="POST">
+        {% csrf_token %} {{form.as_p}}
+        <input type="submit" value="submit">
+    </form>
+    <a href="{% url 'update' student.id %}">cancel</a>
+</body>
+
+</html>
